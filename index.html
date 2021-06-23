@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width", initial-scale="1">
+	<title>형태소 분석 웹사이트</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<!--css(적어서 index안에 넣음ㅎ)-->
+	<style type="text/css">
+		.topic {
+			color: #FA8258;
+			font-weight: bold;
+		}
+		.container-fluid {
+			background-color: #E6E6E6;
+		}
+		.form-control {
+			height: 80px;
+			text-align: center;
+			font-size: 30px;
+			border: 5px solid #F68888;
+		}
+		#search {
+			font-size: 30px;
+			border: 5px solid #F68888;
+			background-color: #F68888;
+			font-weight: bold;
+		}
+		.search-result {
+			border-bottom: 5px dotted #707070;
+			margin-top: 20px;
+			margin-left: 550px;
+			margin-right: 600px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.topic {
+			text-align: center;
+		}
+	</style>
+	<!--nav로 된 거 맨 위에 제목 바 -->
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="index.html"><p class="topic">♥ 형태소 분석 ♥</p></a>
+    		</div>
+  		</div>
+	</nav>
+	<br>
+	<br>
+	<br>
+	<br>
+	<center>
+	<!-- form으로 되어 있는 거 제목창 -->
+	<form class="navbar-form" navbar-left>
+		<div class="form-group">
+			<input type="text" class="form-control" placeholder="문장을 입력하세요">
+			<button type="submit" class="btn btn-default" id="search"><img src="images/zoom.png">분석하기</button>
+		</div>
+	</form>
+	</center>
+	<div class="search-result">분석 결과</div>
+</body>
+</html>
